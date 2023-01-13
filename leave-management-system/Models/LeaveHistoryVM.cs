@@ -19,9 +19,9 @@ namespace leave_management_system.Models
         [Required]
         public DateTime EndDate { get; set; }
         
-        public DetailsLeaveTypeVM LeaveType { get; set; }
+        public LeaveTypeVM LeaveType { get; set; }
         public string LeaveTypeId { get; set; }
-        public IEnumerable<SelectListItem> LeaveTypes { get; set; }
+        public IEnumerable<LeaveTypeVM> LeaveTypes { get; set; }
         public DateTime DateRequested { get; set; }
         public DateTime DateActioned { get; set; }
         public bool? Approved { get; set; }

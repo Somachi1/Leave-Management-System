@@ -18,10 +18,10 @@ namespace leave_management_system.Models
         public EmployeeVM Employee { get; set; }
         public string EmployeeId { get; set; }
         [Required]
-        public DetailsLeaveTypeVM LeaveType { get; set; }
+        public LeaveTypeVM LeaveType { get; set; }
         public string LeaveTypeId { get; set; }
 
-        public IEnumerable<SelectListItem> Employees { get; set; }
-        public IEnumerable<SelectListItem> LeaveTypes { get; set; }
+        public IEnumerable<EmployeeVM> Employees { get; set; }
+        public IEnumerable<LeaveTypeVM> LeaveTypes { get; set; }
     }
 }
